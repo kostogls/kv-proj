@@ -50,27 +50,16 @@ Steps:
     sudo docker compose up db
     ```
     
-3. Open a new terminal
-   
-4. In the next steps you'll need the container id. You can obtain it using the command:
-
-   ```
-   sudo docker ps
-   ```
-   and check the container name that has the postgres db. For example in the screenshot below, we see that this row corresponds to postgres image in our app db container, so we       take the container id ('fb9fa...').
-
-   ![dockerps img](./readme_img/docker_ps.png?raw=true)
-    
 6. First copy the ./sql_material/official_kivosdb_creation.sql script inside the docker container:
 
     ```
     sudo docker cp ./sql_material/official_kivosdb_creation.sql <container_id>:/official_kivosdb_creation.sql
     ```
     
-7. Connect to postgres inside the started docker container
+7. Connect to postgres inside the started docker container. The kv-proj-db-1 is the container name.
     
     ```
-    sudo docker exec -it <container_id> psql -U <POSTGRES_USER> -d kivos-db <POSTGRES_PASSWORD>
+    sudo docker exec -it kv-proj-db-1 psql -U <POSTGRES_USER> -d kivos-db <POSTGRES_PASSWORD>
     ```
     
 8. Run the sql script to create tables and relations
