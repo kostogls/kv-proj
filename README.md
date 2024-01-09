@@ -34,11 +34,9 @@ Steps:
 
    ![Register server connection settings](./readme_img/reg_server_conn.png?raw=true)
 
-5. Create a new db inside the server, and give it the name of DATABASE .env variable.
+5. Connect to the kivos-db database.
 
-   ![Register server connection settings](./readme_img/create_db.png?raw=true)
-
-6. Right click on the created database and open the Query tool. Then, in the editor that opens, open the ./sql_material/official_kivosdb_creation.sql script and run all the queries inside together. After that, the tables have been created. 
+6. Right click on the database and open the Query tool. Then, in the editor that opens, open the ./sql_material/official_kivosdb_creation.sql script and run all the queries inside together. After that, the tables have been created. 
 
 ### Connect to the db (Option 2: using the terminal - linux only) 
 
@@ -72,22 +70,10 @@ Steps:
 7. Connect to postgres inside the started docker container
     
     ```
-    sudo docker exec -it <container_id> psql -U <POSTGRES_USER> -d postgres <POSTGRES_PASSWORD>
+    sudo docker exec -it <container_id> psql -U <POSTGRES_USER> -d kivos-db <POSTGRES_PASSWORD>
     ```
     
-8. Now the psql tool inside the container is opened. Create a db with name of DATABASE .env variable:
-    
-    ```
-    createdb <DATABASE>
-    ```
-    
-9. Open db:
-    
-    ```
-    \c <DATABASE>
-    ```
-    
-10. Run the sql script to create tables and relations
+8. Run the sql script to create tables and relations
     
     ```
     \i official_kivosdb_creation.sql
