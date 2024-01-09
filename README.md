@@ -61,7 +61,7 @@ Steps:
    ```
    and check the container name that has the postgres db. For example in the image, we see that this row corresponds to postgres container, so we take the container id.
 
-   ![dockerps img](./readme_img/dockerps_img.png?raw=true)
+   ![dockerps img](./readme_img/docker_ps.png?raw=true)
     
 6. First copy the ./sql_material/official_kivosdb_creation.sql script inside the docker container:
 
