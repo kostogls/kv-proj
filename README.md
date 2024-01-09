@@ -25,18 +25,19 @@ Steps:
     ```
     sudo docker compose up db
     ```
+   The database is also created when the container starts.
     
-3. If you have pgadmin tool, open it and register a new server. A dialogue box opens. There, in 'General' section: give the server the name you gave to the POSTGRES_DB .env variable.
+4. If you have pgadmin tool, open it and register a new server. A dialogue box opens. There, in 'General' section: give the server the name you gave to the POSTGRES_DB .env variable.
 
    ![Register server general settings](./readme_img/reg_server_name.png?raw=true)
 
-4. In 'Connection' section: Use 'localhost' as Host name/address, your port, username and password from PORT, USER, PASSWORD variables in .env file respectively.
+5. In 'Connection' section: Use 'localhost' as Host name/address, your port, username and password from PORT, USER, PASSWORD variables in .env file respectively.
 
    ![Register server connection settings](./readme_img/reg_server_conn.png?raw=true)
 
-5. Choose the kivos-db database inside the server (it's the name defined in DATABASE and POSTGRES_DB variable in .env).
+6. Choose the kivos-db database inside the server (it's the name defined in DATABASE and POSTGRES_DB variable in .env).
 
-6. Right click on the database and open the Query tool. Then, in the editor that opens, open the ./sql_material/official_kivosdb_creation.sql script and run all the queries inside together. After that, the tables have been created. 
+7. Right click on the database and open the Query tool. Then, in the editor that opens, open the ./sql_material/official_kivosdb_creation.sql script and run all the queries inside together. After that, the tables have been created. 
 
 ### Connect to the db (Option 2: using the terminal - linux only) 
 
