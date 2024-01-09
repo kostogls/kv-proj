@@ -59,7 +59,7 @@ Steps:
    ```
    sudo docker ps
    ```
-   and check the container name that has the postgres db. For example in the screenshot below, we see that this row corresponds to postgres image in our app db container, so we       take the container id.
+   and check the container name that has the postgres db. For example in the screenshot below, we see that this row corresponds to postgres image in our app db container, so we       take the container id ('fb9fa...').
 
    ![dockerps img](./readme_img/docker_ps.png?raw=true)
     
