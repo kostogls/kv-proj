@@ -34,7 +34,7 @@ Steps:
 
    ![Register server connection settings](./readme_img/reg_server_conn.png?raw=true)
 
-5. Connect to the kivos-db database (defined in the DATABASE variable in .env).
+5. Choose the kivos-db database (it's the name defined in DATABASE variable in .env).
 
 6. Right click on the database and open the Query tool. Then, in the editor that opens, open the ./sql_material/official_kivosdb_creation.sql script and run all the queries inside together. After that, the tables have been created. 
 
