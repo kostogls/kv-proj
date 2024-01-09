@@ -11,7 +11,7 @@
 
 1. Clone the repository
 
-2. Regarding the .env file: Despite having it in .gitignore, I uploaded it after, for convinience in running the code directly. If you wish to change the values of the variables in the .env, you can edit it accordingly. In the next steps, I mention where the values of the .env variables must be used.  
+2. Regarding the .env file: Despite that common practice has it in .gitignore, I uploaded it, for convinience in running the code directly. If you wish to change the values of the variables in the .env, you can edit it accordingly. In the next steps, I mention where the values of the .env variables must be used.  
 
 
 ### Create the db (Option 1: using pgadmin tool - windows or linux)
