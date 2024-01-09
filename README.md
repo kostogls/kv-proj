@@ -26,7 +26,7 @@ Steps:
     sudo docker compose up db
     ```
     
-3. If you have pgadmin tool, open it and register a new server. A dialogue box opens. There, in 'Settings' section: give the server the name you gave to the POSTGRES_DB .env variable.
+3. If you have pgadmin tool, open it and register a new server. A dialogue box opens. There, in 'General' section: give the server the name you gave to the POSTGRES_DB .env variable.
 
    ![Register server general settings](./readme_img/reg_server_name.png?raw=true)
 
