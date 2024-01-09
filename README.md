@@ -14,7 +14,7 @@
 2. Regarding the .env file: Despite that common practice has it in .gitignore, I uploaded it, for convinience in running the code directly. If you wish to change the values of the variables in the .env, you can edit it accordingly. In the next steps, I mention where the values of the .env variables must be used.  
 
 
-### Create the db (Option 1: using pgadmin tool - windows or linux)
+### Connect to the db (Option 1: using pgadmin tool - windows or linux)
 
 Steps: 
     
@@ -40,7 +40,7 @@ Steps:
 
 6. Right click on the created database and open the Query tool. Then, in the editor that opens, open the ./sql_material/official_kivosdb_creation.sql script and run all the queries inside together. After that, the tables have been created. 
 
-### Create the db (Option 2: using the terminal - linux only) 
+### Connect to the db (Option 2: using the terminal - linux only) 
 
 Steps:
 
