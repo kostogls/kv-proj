@@ -56,10 +56,11 @@ Steps:
     sudo docker cp ./sql_material/official_kivosdb_creation.sql <container_id>:/official_kivosdb_creation.sql
     ```
     
-7. Connect to postgres inside the started docker container. The kv-proj-db-1 is the container name.
+7. Connect to postgres inside the started docker container. If you have not made changes in the .env file or in docker-compose, you can run it as it is. kv-proj-db-1 is the 
+   container name, postgres the db username and kivos-db the database.
     
     ```
-    sudo docker exec -it kv-proj-db-1 psql -U <POSTGRES_USER> -d kivos-db <POSTGRES_PASSWORD>
+    sudo docker exec -it kv-proj-db-1 psql -U postgres -d kivos-db 
     ```
     
 8. Run the sql script to create tables and relations
